@@ -1,0 +1,67 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+title: Multi(s)tool(s)
+author: Brandon Victor
+
+navbar-links:
+  About Me: "aboutme"
+
+avatar: "/assets/img/avatar-icon.png"
+round-avatar: true
+
+title-on-all-pages: true
+
+excerpt_length: 30
+feed_show_excerpt: true
+feed_show_tags: false
+post_search: true
+
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+timezone: "Australia/Melbourne"
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false  # add comments to all blog posts
+      social-share: false # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+  - Dockerfile
