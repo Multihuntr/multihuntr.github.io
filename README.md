@@ -14,3 +14,16 @@ docker run --rm -it -v $PWD:/srv/jekyll -v $PWD/vendor/bundle:/usr/local/bundle 
 ## Gotchyas
 
 Posts need to be added to `_posts/[YEAR]-[MONTH]-[DAY]-[snakecased-title].md` with exactly that form, else they won't be registered as "posts".
+
+Posts are markdown, but need to have a header like:
+
+```
+---
+layout: post
+title: Test post
+author: Brandon Victor
+readtime: true
+date: 2024-09-18
+tags: debugging
+---
+```
